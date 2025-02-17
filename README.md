@@ -89,9 +89,11 @@ docker compose up -d
 Для начала проверим что приложение действительно предоставляет метрики, для этого перейдем по адресу http://localhost:8085/metrics.
 Увидим следующее:
 ![alt text](fastapi/metrics.png)
+
 Чтобы проверить тот факт что метрики действительно попадают в Prometheus, можно перейти на http://localhost:9090/targets
 и увидеть следующее:
 ![alt text](prometheus/prometheus_targets.png)
+
 Так же можно перейти в раздел Graph, выбрать например метрику TotalMemory и нажать Execute (видим что появился график)
 ![alt text](prometheus/prometheus_graph.png)
 
